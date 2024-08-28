@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Voz y Pluma | Sitio Web Oficial</title>
+    <script defer> src="index.js"</script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="C:\Users\Regi\Desktop\Apps Nativas\Primer Trabajo\Contenido de la pagina\file.ico"
+</head>
+<body>
+        
+            <section class="container">
+                <div class="video-container">
+                    <video src="C:\Users\Regi\Desktop\Apps Nativas\Primer Trabajo\Contenido de la pagina\Vídeo sin título ‐ Hecho con Clipchamp (2).mp4" autoplay muted loop>
+                    </video>
+                </div>
+                <header>
+                    <div>
+                        <a href="file:///C:/Users/Regi/Desktop/Apps%20Nativas/Primer%20Trabajo/indez.html">
+                            <img src="C:\Users\Regi\Desktop\Apps Nativas\Primer Trabajo\Contenido de la pagina\file.png" class="VyPLogo" alt="Voz y Pluma logo">
+                        </a>
+                    </div>
+                    <nav>
+                        <a href="https://www.bmw.com.ar/es/all-models.html">Nuestra Historia</a>
+                        <a href="https://www.bmw.com.ar/es/fastlane/dealer-locator.html">Sucursales</a>
+                        <a href="https://www.bmw.com.ar/es/ssl/solicitud-de-oferta.html">Contactanos</a>
+                    </nav>
+                </header>
+        <main>        <div class="principal">
+                    <div class="texto">
+                        <h1 class="welcome">Bienvenido al Sitio Web de:</h1>
+                        <h2 class="title">Voz y Pluma</h2>
+                        <h3 class="slogan"> Donde las palabras cobran vida...</h3>
+                    </div>
+                    <div class="boton-contenedor">
+                        <a href="file:///C:/Users/Regi/Desktop/Apps%20Nativas/Primer%20Trabajo/web.html" class="boton">Conocé más
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="content">
+                <div class="contactos">
+                    <h4 class="suscripcion">Suscribite para obtener beneficios</h4>
+                    <p>Te enviaremos una sorpresa :)</p>
+                    <form id="subscriptionForm">
+                        <label for="email">Correo Electrónico:</label><br>
+                        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required><br><br>
+                        <button type="submit" value="Suscribirse" id="subscribeButton"> 
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Suscribirse
+                        </button>
+                    </form>
+                </div>
+                <div class="contactos">
+                    <h4>Ventas:</h4>
+                    <a href="https://accounts.google.com/servicelogin?service=mail">
+                        <p>ventas@vozypluma.com.ar</p>
+                    </a>
+                    <h4>Atención al cliente:</h4>
+                    <a href="https://www.whatsapp.com/?lang=es_LA">
+                        <p>341-619-3903 (SÓLO WHATSAPP)</p>
+                    </a>
+                    <a href="https://accounts.google.com/servicelogin?service=mail">
+                        <p>antencionalcliente@vozypluma.com.ar</p>
+                    </a>
+                </div>
+                <div class="links">
+                    <a href="#">CÓMO COMPRAR</a>
+                    <a href="#">ENVÍOS</a>
+                    <a href="#">PREGUNTAS FRECUENTES</a>
+                    <a href="#">CAMBIOS & DEVOLUCIONES</a>
+                </div>
+            </section>
+        </footer>
+        <script>
+                document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); 
+            
+                    const email = document.getElementById('email').value;
+               
+                    localStorage.setItem('subscribedEmail', email);
+            
+                    alert(`Te has suscrito exitosamente con el correo: ${email}`);
+            
+                   
+                    document.getElementById('email').value = '';
+                
+                });
+            </script>
+            <script  type="text/javascript">
+                let video = document.querySelector('video');
+                window.addEventListener('scroll' , function(){
+                        let value = 1 + window.scrollY/-600;
+                        video.style.opacity = value;
+                })
+            </script>
+            
+    </body>
+    </html>

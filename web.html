@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz y Pluma | Sitio Web Oficial</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Contenido de la pagina/file.ico">
+</head>
+<body>
+    <section>
+        <header class="head">
+            <div class="header-dos">
+                <div>
+                    <a href="index.html">
+                        <img src="Contenido de la pagina/file.png" class="VyPLogo" alt="Voz y Pluma logo">
+                    </a>
+                </div>
+                <nav class="objetos">
+                    <a href="#libros">LIBROS FÍSICOS</a>
+                    <a href="file:///C:/Users/Regi/Desktop/Apps%20Nativas/Primer%20Trabajo/ebooks.html">E-BOOKS</a>
+                    <a href="https://open.spotify.com/intl-es">PODCASTS</a>
+                </nav>
+                <form class="search-bar" action="search-results.html" method="get">
+                    <input type="text" placeholder="Buscar..." name="query">
+                    <button type="submit">Buscar</button>
+                </form>        
+            </div>
+        </header>
+
+        <main class="maain">        
+            <hr class="lines">
+            <hr class="lines">
+        <div class="clase">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="Contenido de la pagina/0.png" alt="Imagen 1">
+                    <img src="Contenido de la pagina/1.png" alt="Imagen 2">
+                    <img src="Contenido de la pagina/2.png" alt="Imagen 3">
+                </div>
+                <button class="prev" onclick="prevImage()">&#10094;</button>
+                <button class="next" onclick="nextImage()">&#10095;</button>
+            </div> 
+
+            <div class="imagenes">
+                <h3 id="headphones" class="productos">ADIOLIBROS Y PODCASTS</h3>
+                <a href="https://open.spotify.com/intl-es">
+                    <img src="C:\Users\Regi\Desktop\Apps Nativas\Primer Trabajo\Contenido de la pagina\auris.png" alt="headphones-Photoroom">
+                </a> 
+                <h3 class="productos">GENRES & BEST-SELLERS</h3> 
+                <a href="#libros">
+                    <img src="C:\Users\Regi\Desktop\Apps Nativas\Primer Trabajo\Contenido de la pagina\dibujo librosjpg-Photoroom.png" alt="dibujo">
+                </a href="#">
+                <h3 id="notebook" class="productos">E-BOOKS DISPONIBLES</h3> 
+                <a href="file:///C:/Users/Regi/Desktop/Apps%20Nativas/Primer%20Trabajo/ebooks.html">
+                    <img src="C:\Users\Regi\Desktop\Apps Nativas\Primer Trabajo\Contenido de la pagina\lapt.png"alt="laptop-Photoroom"
+                </a>
+            </div>
+        </div>
+        <h3 class="libros-destacados" id="libros">Libros Destacados</h3>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="https://www.elejandria.com/covers/Orgullo_y_prejuicio-Jane_Austen-lg.png" alt="Portada 1">
+                    <h3>Orgullo y Prejuicio</h3>
+                    <p>Género: Novela Clásica</p>
+                    <p>Precio: $1000</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/b0/39/b039af065268818b7bd3b0e016f8db65.jpg" alt="Portada 2">
+                    <h3>1984</h3>
+                    <p>Género: Ciencia Ficción</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/35/2e/352e63af40b5cc4eada5cee03da49412.jpg" alt="Portada 3">
+                    <h3>El Señor de los Anillos</h3>
+                    <p>Género: Fantasía</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/74/61/74616e2090e08508e87b37ed2e60df84.jpg" alt="Portada 4">
+                    <h3>Matar a un ruiseñor</h3>
+                    <p>Género: Misterio</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/c1/fa/c1fa8375462b2287988d59a19f5a523e.jpg" alt="Portada 5">
+                    <h3>The Lean Startup</h3>
+                    <p>Género: Negocios</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/26/13/261368a0d760793902d7556ba8a1ce3e.jpg" alt="Portada 6">
+                    <h3>Leaders Eat Last</h3>
+                    <p>Género: Auto-ayuda</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div>
+                    <h3 class="libros-destacados">E-BOOKS DISPONIBLES</h3>
+                </div>
+ 
+                
+
+               
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <h3 class="libros-destacados">Ficción y Fantasía</h3>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/3b/5e/3b5efaf14facaf0246cc6cd2ee086970.jpg" alt="Portada 1">
+                    <h3>Harry Potter and the Sorcerer's Stone</h3>
+                    <p>Género: Fantasía</p>
+                    <p>Precio: $1000</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/04/f8/04f8efa67ba5f8a337cdcf201a12d875.jpg" alt="Portada 2">
+                    <h3>The Name of the Wind</h3>
+                    <p>Género: Ficción</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.cadaverexquisito.com.ar/storage/images/T8V0kv86X2cL5pZ0kEgcAoO2f2KjkEfDoewt5kxi.jpg" alt="Portada 3">
+                    <h3>Relato de un Náufrago</h3>
+                    <p>Género: Fantasía</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://m.media-amazon.com/images/I/51hQ4EstmyL._SY780_.jpg" alt="Portada 4">
+                    <h3>The Chronicles of Narnia</h3>
+                    <p>Género: Ficción</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxoERl_fQgRTT8qziR6SA8UbR-ZFxGO5XkUg&s" alt="Portada 5">
+                    <h3>El Alquimista</h3>
+                    <p>Género: Ficción</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/706758.jpg" alt="Portada 6">
+                    <h3>La casa de los espíritus</h3>
+                    <p>Género: Fantasía</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <h3 class="libros-destacados">Novelas</h3>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/33/5a/335af0768484b41ec4b206848844f723.jpg" alt="Portada 1">
+                    <h3>Los hermanos Karamazov</h3>
+                    <p>Género: Novela</p>
+                    <p>Precio: $1000</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/9e/67/9e679679e631a89fab102b124e0406f5.jpg" alt="Portada 2">
+                    <h3>Beloved</h3>
+                    <p>Género: Novela</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/61/8d/618d227e8967274cd9589a549adff52d.jpg" alt="Portada 3">
+                    <h3>Cien años de soledad</h3>
+                    <p>Género: Novela</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://m.media-amazon.com/images/I/51hQ4EstmyL._SY780_.jpg" alt="Portada 4">
+                    <h3>The Chronicles of Narnia</h3>
+                    <p>Género: Novela</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/27/31/2731e34142d7840669fb9daf21e6f5e6.jpg" alt="Portada 5">
+                    <h3>Never Let Me Go</h3>
+                    <p>Género: Novela</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg/640px-The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg" alt="Portada 6">
+                    <h3>The Grapes of Wrath</h3>
+                    <p>Género: Novela</p>
+                    <p>Precio: $1200</p>
+                    <p>Cuotas: 3 sin interés</p>
+                </div>
+                
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        
+        
+
+        </main>
+
+        <footer>
+            <section class="content">
+                <div class="contactos">
+                    <h4 class="suscripcion">Suscribite para obtener beneficios</h4>
+                    <p>Te enviaremos una sorpresa :)</p>
+                    <form id="subscriptionForm">
+                        <label for="email">Correo Electrónico:</label><br>
+                        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required><br><br>
+                        <button type="submit" value="Suscribirse" id="subscribeButton"> 
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Suscribirse
+                        </button>
+                    </form>
+                </div>
+                <div class="contactos">
+                    <h4>Ventas:</h4>
+                    <a href="#">
+                        <p>ventas@vozypluma.com.ar</p>
+                    </a>
+                    <h4>Atención al cliente:</h4>
+                    <a href="#">
+                        <p>341-619-3903 (SÓLO WHATSAPP)</p>
+                    </a>
+                    <a href="#">
+                        <p>atencionalcliente@vozypluma.com.ar</p>
+                    </a>
+                </div>
+                <div class="links">
+                    <a href="#">CÓMO COMPRAR</a>
+                    <a href="#">ENVÍOS</a>
+                    <a href="#">PREGUNTAS FRECUENTES</a>
+                    <a href="#">CAMBIOS & DEVOLUCIONES</a>
+                </div>
+            </section>
+        </footer>
+    </section>
+
+    
+    <script>
+        document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            
+            const email = document.getElementById('email').value;
+
+            
+            localStorage.setItem('subscribedEmail', email);
+
+            
+            alert(`Te has suscrito exitosamente con el correo: ${email}`);
+
+            
+            document.getElementById('email').value = '';
+
+        });
+        </script>
+        <script>
+           
+            let currentIndex = 0;
+
+            function showImage(index) {
+                const images = document.querySelectorAll('.carousel-images img');
+                const totalImages = images.length;
+
+                if (index >= totalImages) {
+                    currentIndex = 0;
+                } else if (index < 0) {
+                    currentIndex = totalImages - 1;
+                } else {
+                    currentIndex = index;
+                }
+
+                const offset = -currentIndex * 100;
+                document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+            }
+
+            function nextImage() {
+                showImage(currentIndex + 1);
+            }
+
+            function prevImage() {
+                showImage(currentIndex - 1);
+            }
+
+    </script>
+
+</body>
+</html>
